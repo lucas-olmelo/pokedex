@@ -1,0 +1,211 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.navegation{
+    padding: 1rem;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+.pokemon{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name{
+    color: white;
+    margin: 0.5rem 0;
+    text-transform: capitalize;
+}
+
+.number{
+    color: white;
+    text-align: right;
+}
+
+.types{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.type{
+    color: white;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .875rem;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
+    margin-right: .5rem;
+}    
+
+.image{
+    text-align: center;
+}
+
+.image img{
+    height: 200px;
+}
+
+.box{
+    padding: 1rem;
+}
+
+.overview, .stats{
+    background-color: white;
+    padding: 1rem;
+}
+
+.overview{
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+
+.stats{
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    margin-bottom: 1rem;
+}
+
+.infos{
+    list-style: none;
+    margin: 0;
+    padding: 0%;
+}
+
+.info{
+    display: grid;
+    grid-template-columns: 1.25fr 1.5fr;
+}
+
+.abilities{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+}
+
+.ability{
+    text-transform: capitalize;
+}
+
+.all-stats{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.stat{
+    display: grid;
+    grid-template-columns: 1.25fr .25fr 1.25fr;
+    align-items: center;
+    margin: .5rem;
+}   
+
+.labels{
+    opacity: 0.65;
+    margin: 0;
+}
+
+.num{
+    margin: 0;
+}
+
+@media screen and (min-width: 660px){
+    .box{
+        max-width: 660px;
+        height: auto;
+        margin: auto;
+        border-radius: 1rem;
+        font-size: 1.25rem;
+    }
+
+    /* .image img{
+        height: 400px;
+    } */
+}
+
+@media screen and (min-width: 992px){
+    .box{
+        max-width: 992px;
+        height: auto;
+        margin: auto;
+        border-radius: 1rem;
+        font-size: 1.25rem;
+    }
+
+    .image img{
+        height: 300px;
+    }
+}
+
+
+
+.normal {
+    background-color: #a6a877;
+}
+.grass {
+    background-color: #61E1CA;
+}
+.fire {
+    background-color: #ff9346;
+}
+.water {
+    background-color: #678fee;
+}
+.electric {
+    background-color: #f7cf2e;
+}
+.ice {
+    background-color: #98d5d7;
+}
+.ground {
+    background-color: #dfbf69;
+}
+.flying {
+    background-color: #a98ff0;
+}
+.poison {
+    background-color: #a040a0;
+}
+.fighting {
+    background-color: #bf3029;
+}
+.psychic {
+    background-color: #f65687;
+}
+.dark {
+    background-color: #725847;
+}
+.rock {
+    background-color: #b8a137;
+}
+.bug {
+    background-color: #a8b720;
+}
+.ghost {
+    background-color: #6e5896;
+}
+.steel {
+    background-color: #b9b7cf;
+}
+.dragon {
+    background-color: #6f38f6;
+}
+.fairy {
+    background-color: #f9aec7;
+}
