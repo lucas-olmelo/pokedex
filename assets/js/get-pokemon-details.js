@@ -5,7 +5,7 @@ const pokemonNameCapitalized = pokemonName.charAt(0).toUpperCase() + pokemonName
 
 document.title = pokemonNameCapitalized + ' - Pokedex'
 
-const contentPokemon = document.getElementById('body'); 
+const contentPokemon = document.getElementById('page'); 
 
 function getPokemonDetails(pokemon) {
     pokeApi.getPokemon(pokemon).then((details) => {
@@ -17,13 +17,15 @@ function getPokemonDetails(pokemon) {
                 </div>
                 <div class="content" id="content">
                 <div class="pokemon">
-                    <div class="title">
-                        <h1 class="name">${details.name}</h1>
+                    <div class="head">
+                        <div class="title">
+                            <h1 class="name">${details.name}</h1>
+                            <ol class="types">
+                                ${details.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
+                            </ol>
+                        </div>
                         <span class="number">#${details.number}</span>
                     </div>
-                    <ol class="types">
-                        ${details.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
-                    </ol>
                     <div class="image">
                         <img src="${details.photo}" alt="Bulbasaur">
                     </div>
@@ -39,7 +41,6 @@ function getPokemonDetails(pokemon) {
                             <label class="labels">Weight:</label>
                             <label>${details.weight/10}kg</label>
                         </li>
-                        <br>
                         <li class="info">
                             <label class="labels">Abilities:</label>
                             <label>

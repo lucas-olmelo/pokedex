@@ -16,7 +16,7 @@
     flex-direction: column;
 }
 
-.title{
+.head{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
